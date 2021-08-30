@@ -1,0 +1,87 @@
+.Task {
+	width: 90%;
+	min-height: 100px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin: 10px 0;
+	padding: 15px;
+	/* background-color: green; */
+	border-radius: 5px;
+	box-shadow: 5px 4px 8px rgba(229, 252, 253, 0.842),
+		-4px -3px 6px rgba(229, 252, 253, 0.842);
+	animation: fadeIn 0.3s ease-in-out alternate;
+}
+
+.Task__title {
+	font-size: 2rem;
+	margin-bottom: 5px;
+	transition: all 1s ease-in-out;
+}
+
+.Task__title.striked {
+	text-decoration: line-through;
+}
+
+.Task__buttons {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.button {
+	width: 45%;
+	height: 30px;
+	max-width: 120px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	position: relative;
+	font-size: 1.7rem;
+	border: none;
+	padding: 0 5px;
+	outline: none;
+	border-radius: 10px;
+	transition: transform 0.3s ease;
+	cursor: pointer;
+	box-shadow: 2px 2px 4px rgba(168, 170, 170, 0.541);
+}
+
+.button:active {
+	transform: scale(0.8);
+}
+
+.complete-button {
+	background-color: rgb(112, 250, 112);
+	border: 2px solid rgb(7, 221, 7);
+}
+
+.edit-button {
+	background-color: rgb(215, 241, 252);
+	border: 2px solid rgb(65, 206, 231);
+}
+
+.complete-button:disabled,
+.edit-button:disabled {
+	transition: none;
+	background-color: rgba(216, 213, 213, 0.747);
+	border: 2px solid rgba(216, 213, 213, 0.747);
+	cursor: default;
+}
+
+.complete-button:disabled:active,
+.edit-button:disabled:active {
+	transform: none;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

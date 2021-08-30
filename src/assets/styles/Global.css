@@ -1,0 +1,33 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--mainFont: 'arial', 'sans-serif';
+	--baseFontSize: 1.6rem;
+	--primaryColor: #5b96f7;
+	--secondaryColor: #80a7f5;
+	--contrastColor: #ffc947;
+	--white: #efefef;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: var(--mainFont);
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	font-size: var(--baseFontSize);
+	/* color: var(--white); */
+	overflow-x: hidden;
+	/* overflow-y: scroll; */
+}
+
+#root {
+	width: 100%;
+	height: 100%;
+}

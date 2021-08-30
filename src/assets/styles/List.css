@@ -1,0 +1,46 @@
+.ToDoList__items::-webkit-scrollbar {
+	width: 5px;
+	border-radius: 5px;
+}
+
+.ToDoList__items::-webkit-scrollbar-track {
+	background-color: rgba(209, 209, 209, 0.856);
+}
+
+.ToDoList__items::-webkit-scrollbar-thumb {
+	background: #269de2;
+	border-radius: 5px;
+}
+
+.ToDoList {
+	width: 100%;
+	max-height: 450px;
+	/* overflow-y: scroll; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0 30px;
+}
+
+.ToDoList__title {
+	align-self: flex-start;
+}
+
+.ToDoList__items {
+	width: 100%;
+	height: auto;
+	/* max-height: 450px; */
+	/* overflow-y: scroll; */
+	display: flex;
+	flex-direction: column;
+	/* justify-co~ntent: center; */
+	align-items: center;
+	margin: 20px 0 30px;
+	overflow-y: scroll;
+}
+
+.ToDoList__empty {
+	font-size: 1.9rem;
+	margin-top: 20px;
+}

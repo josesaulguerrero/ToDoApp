@@ -1,0 +1,12 @@
+.search {
+	border: none;
+	align-self: center;
+	width: 70%;
+	height: 40px;
+	padding: 5px 15px;
+	margin: 5px 0 15px;
+	font-size: 1.8rem;
+	background-color: rgba(232, 249, 250, 0.712);
+	border-radius: 20px;
+	box-shadow: 1px 2px 4px rgba(167, 165, 165, 0.589);
+}
